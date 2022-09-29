@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Sidebar.css';
 
 const Sidebar = (props) => {
-
-    
     const { time } = props;
-    //console.log(time);
-
     let exerciseTime = 0;
     for(const card of time){
         exerciseTime = parseFloat(exerciseTime + card.timeRequired);
-        //console.log(exerciseTime);
+    }
+
+    const [sec, setSec] = useState(0);
+    const breakTime = (time) => {
+        setSec(time);
     }
 
     return (
-        <div class="row">
+        <div className="row">
             <div className="com-md-12">
                 <div className="personal-details">
                     <h4 className="name">Adnan Khan</h4>
@@ -32,19 +32,19 @@ const Sidebar = (props) => {
                 <div className="break">
                     <h4>Add a Break</h4>
                     <div className="break-info">
-                        <p>10s</p>
-                        <p>20s</p>
-                        <p>30s</p>
-                        <p>40s</p>
-                        <p>50s</p>
+                        <button onClick={() => breakTime(10)} className="btn btn-warning text-white">10</button>
+                        <button onClick={() => breakTime(20)} className="btn btn-warning text-white">20</button>
+                        <button onClick={() => breakTime(30)} className="btn btn-warning text-white">30</button>
+                        <button onClick={() => breakTime(40)} className="btn btn-warning text-white">40</button>
+                        <button onClick={() => breakTime(50)} className="btn btn-warning text-white">50</button>
                     </div>
                 </div>
                 <div className="exercise-info">
                     <h4>Exercise Details</h4>
                     <p><b>Exercise Time: {exerciseTime.toFixed(2)}s</b></p>
-                    <p><b>Break Time:</b></p>
+                    <p><b>Break Time: {sec}s</b></p>
                 </div>
-                <button className="btnm btn-warning activity">Activity Completed</button>
+                <button className="btn btn-warning activity">Activity Completed</button>
             </div>
         </div>
     );

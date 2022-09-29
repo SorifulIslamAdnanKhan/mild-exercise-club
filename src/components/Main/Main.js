@@ -30,7 +30,7 @@ const Main = () => {
             <div className="row">
                 <div className="col-md-9">
                     <h3>Select Today’s Exercise</h3>
-                    <div class="row g-4">
+                    <div className="row g-4">
                         {
                             cards.map(card => <Card
                                 key={card.id}
