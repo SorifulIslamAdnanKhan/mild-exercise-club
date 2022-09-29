@@ -1,71 +1,13 @@
+.card{
+    border: 1px solid rgb(179, 179, 179);
+}
+.card img{
+    height: 200px;
+}
 .card-body h5, p{
     text-align: left;
 }
 .card-body button:hover{
     background-color: black;
     border: none;
-}
-.personal-details{
-    color: white;
-    background-color: cadetblue;
-    padding: 20px;
-    border-radius: 20px;
-}
-.personal-details .name{
-    margin-bottom: 40px;
-}
-.physical-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: white;
-    font-size: 18px;
-}
-.break{
-    margin-top: 20px;
-    color: white;
-    background-color: cadetblue;
-    padding: 20px;
-    border-radius: 20px;
-}
-.break-info{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 18px;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 20px;
-}
-.break-info p{
-    background-color: rgb(15, 15, 15);
-    padding: 8px;
-    margin: 2px;
-    border-radius: 50%;
-    text-align: center;
-}
-.break-info p:hover{
-    background-color: rgb(228, 160, 33);
-}
-.exercise-info{
-    margin-top: 20px;
-    color: white;
-    background-color: cadetblue;
-    padding: 20px;
-    border-radius: 20px;
-}
-.exercise-info h4{
-    margin-bottom: 40px;
-}
-.activity{
-    margin-top: 40px;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-
-}
-.activity:hover {
-    background-color: black;
-    color: white;
 }
