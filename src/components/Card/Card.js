@@ -1,8 +1,7 @@
 import './Card.css';
 
-const Card = ({card}) => {
+const Card = ({ card, handleTime }) => {
     const { name, picture, timeRequired } = card;
-    
     return (
         <div className="col-md-6 col-lg-4">
             <div class="card">
@@ -11,11 +10,10 @@ const Card = ({card}) => {
                     <h5 class="card-title">{name}</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p><b>Time Required: {timeRequired}</b></p>
-                    <button className='btn btn-warning text-white'>Add To List</button>
+                    <button onClick={() => handleTime(card)} className='btn btn-warning text-white'>Add To List</button>
                 </div>
             </div>  
         </div>
-        
     );
 };
 
