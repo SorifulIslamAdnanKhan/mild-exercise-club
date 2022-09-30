@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Sidebar = (props) => {
     const { time } = props;
@@ -8,28 +10,10 @@ const Sidebar = (props) => {
         exerciseTime = parseFloat(exerciseTime + card.timeRequired);
     }
 
-    // const [sec, setSec] = useState(0);
-    // const [secc, setSecc] = useState(null);
-    // const breakTime = (time) => {
-    //     setSec(time);
-    // }
-
-    // useEffect(() => {
-    //     const ff = localStorage.getItem('time');
-    //     setSecc(ff)
-
-    //     if (sec !== 0) {
-    //         localStorage.setItem('time', JSON.stringify(sec));
-    //     }
-
-    // }, [sec]);
-
-
     const [sec, setSec] = useState(0);
 
     useEffect(() => {
         const sec = localStorage.getItem('time');
-        //console.log(sec);
         if (sec) {
             setSec(sec);
         }   
@@ -40,7 +24,9 @@ const Sidebar = (props) => {
         setSec(time);
     }
 
-    
+    const toastMessage = () =>{
+        toast.success("Your activity completed successfully!");
+    }
 
     return (
         <div className="row">
@@ -73,7 +59,8 @@ const Sidebar = (props) => {
                     <p><b>Exercise Time: {exerciseTime.toFixed(2)}s</b></p>
                     <p><b>Break Time: {sec}s</b></p>
                 </div>
-                <button className="btn btn-warning activity">Activity Completed</button>
+                <button onClick={toastMessage} className="btn btn-warning activity">Activity Completed</button>
+                <ToastContainer />
             </div>
         </div>
     );
