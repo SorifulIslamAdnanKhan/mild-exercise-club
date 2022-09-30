@@ -9,7 +9,7 @@ const Questions = () => {
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="headingOne">
                         <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How does React Work?
+                            How does React work?
                         </button>
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -31,15 +31,17 @@ const Questions = () => {
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>props</p>
-                            <ul>
-                                <li>Props are read-only.</li>
-                                <li>It is immutable so it cannot be modified.</li>
-                                <li>With props you can pass data from one component to another.</li>
-                                <li>Props can be used with state and functional components.</li>
-                            </ul>
+                            <div>
+                                <ul className="text-start">
+                                    <li>Props are read-only.</li>
+                                    <li>It is immutable so it cannot be modified.</li>
+                                    <li>With props you can pass data from one component to another.</li>
+                                    <li>Props can be used with state and functional components.</li>
+                                </ul>
+                            </div>
                             <br />
                             <p>state</p>
-                            <ul>
+                            <ul className="text-start">
                                 <li>State is both read and write.</li>
                                 <li>It is mutable so it can be modified.</li>
                                 <li>The data is passed within the component only.</li>
@@ -57,7 +59,7 @@ const Questions = () => {
                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>useEffect is not only used for fetching or loading API data but also can be used for:</p>
-                            <ul>
+                            <ul className="text-start">
                                 <li>Validating input field</li>
                                 <li>Trigger animation on new array value</li>
                                 <li> Changing state value</li>
