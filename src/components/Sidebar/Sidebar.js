@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 
 const Sidebar = (props) => {
@@ -12,6 +12,15 @@ const Sidebar = (props) => {
     const breakTime = (time) => {
         setSec(time);
     }
+
+    useEffect(() => {
+        
+        localStorage.setItem('time', JSON.stringify(sec));
+
+    }, [sec]);
+
+   
+
 
     return (
         <div className="row">
