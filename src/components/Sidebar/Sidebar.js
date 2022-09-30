@@ -8,19 +8,39 @@ const Sidebar = (props) => {
         exerciseTime = parseFloat(exerciseTime + card.timeRequired);
     }
 
+    // const [sec, setSec] = useState(0);
+    // const [secc, setSecc] = useState(null);
+    // const breakTime = (time) => {
+    //     setSec(time);
+    // }
+
+    // useEffect(() => {
+    //     const ff = localStorage.getItem('time');
+    //     setSecc(ff)
+
+    //     if (sec !== 0) {
+    //         localStorage.setItem('time', JSON.stringify(sec));
+    //     }
+
+    // }, [sec]);
+
+
     const [sec, setSec] = useState(0);
+
+    useEffect(() => {
+        const sec = localStorage.getItem('time');
+        //console.log(sec);
+        if (sec) {
+            setSec(sec);
+        }   
+    }, [sec]);
+
     const breakTime = (time) => {
+        localStorage.setItem('time', time);
         setSec(time);
     }
 
-    useEffect(() => {
-        
-        localStorage.setItem('time', JSON.stringify(sec));
-
-    }, [sec]);
-
-   
-
+    
 
     return (
         <div className="row">

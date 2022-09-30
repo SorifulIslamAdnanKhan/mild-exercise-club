@@ -19,7 +19,7 @@ const Main = () => {
 
 
     const handleTime = (cards) => {
-        //console.log(cards);
+    
         const newTime = [...time, cards];
         setTime(newTime);
     }

@@ -31,24 +31,20 @@ const Questions = () => {
                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>props</p>
-                            <p>
-                               <ul>
-                                    <li>Props are read-only.</li>
-                                    <li>It is immutable so it cannot be modified.</li>
-                                    <li>With props you can pass data from one component to another.</li>
-                                    <li>Props can be used with state and functional components.</li>
-                                </ul> 
-                            </p>
+                            <ul>
+                                <li>Props are read-only.</li>
+                                <li>It is immutable so it cannot be modified.</li>
+                                <li>With props you can pass data from one component to another.</li>
+                                <li>Props can be used with state and functional components.</li>
+                            </ul>
                             <br />
                             <p>state</p>
-                            <p>
-                                <ul>
-                                    <li>State is both read and write.</li>
-                                    <li>It is mutable so it can be modified.</li>
-                                    <li>The data is passed within the component only.</li>
-                                    <li>State can be used only with the state components/class component (Before 16.0).</li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>State is both read and write.</li>
+                                <li>It is mutable so it can be modified.</li>
+                                <li>The data is passed within the component only.</li>
+                                <li>State can be used only with the state components/class component (Before 16.0).</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -61,14 +57,12 @@ const Questions = () => {
                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>useEffect is not only used for fetching or loading API data but also can be used for:</p>
-                            <p>
-                                <ul>
-                                    <li>Validating input field</li>
-                                    <li>Trigger animation on new array value</li>
-                                    <li> Changing state value</li>
-                                    <li> Changing props value</li>
-                                </ul>
-                            </p>
+                            <ul>
+                                <li>Validating input field</li>
+                                <li>Trigger animation on new array value</li>
+                                <li> Changing state value</li>
+                                <li> Changing props value</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
