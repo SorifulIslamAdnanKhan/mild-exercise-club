@@ -41,12 +41,14 @@ const Questions = () => {
                             </div>
                             <br />
                             <p>state</p>
-                            <ul className="text-start">
-                                <li>State is both read and write.</li>
-                                <li>It is mutable so it can be modified.</li>
-                                <li>The data is passed within the component only.</li>
-                                <li>State can be used only with the state components/class component (Before 16.0).</li>
-                            </ul>
+                            <div>
+                                <ul className="text-start">
+                                    <li>State is both read and write.</li>
+                                    <li>It is mutable so it can be modified.</li>
+                                    <li>The data is passed within the component only.</li>
+                                    <li>State can be used only with the state components/class component (Before 16.0).</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -59,12 +61,14 @@ const Questions = () => {
                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                         <div className="accordion-body">
                             <p>useEffect is not only used for fetching or loading API data but also can be used for:</p>
-                            <ul className="text-start">
-                                <li>Validating input field</li>
-                                <li>Trigger animation on new array value</li>
-                                <li> Changing state value</li>
-                                <li> Changing props value</li>
-                            </ul>
+                            <div>
+                                <ul className="text-start">
+                                    <li>Validating input field</li>
+                                    <li>Trigger animation on new array value</li>
+                                    <li> Changing state value</li>
+                                    <li> Changing props value</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

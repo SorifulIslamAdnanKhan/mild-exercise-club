@@ -25,7 +25,7 @@ const Sidebar = (props) => {
     }
 
     const toastMessage = () =>{
-        toast.success("Your activity completed successfully!");
+        toast.success("Your activity have completed successfully!");
     }
 
     return (
